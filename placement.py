@@ -29,12 +29,12 @@ with col2:
     mba_p = st.text_input('Enter MBA %')
 
 if st.button('Predict salary'):
-    try:
+    # try:
         input_data = (
             float(gender), float(ssc_p), float(hsc_p), float(hsc_s), float(degree_p),
             float(degree_t), float(workex), float(etest_p), float(specialisation), float(mba_p)
         )
         w_pre = Predict(input_data)
         st.success(f'Prediction: {w_pre}')
-    except ValueError:
-        st.error("Please enter numeric values only.")
+    # except ValueError:
+        # st.error("Please enter numeric values only.")
